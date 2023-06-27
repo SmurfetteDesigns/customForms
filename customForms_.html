@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Custom Order</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles_.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="p-5 bg-primary text-white text-center">
+        <h1>270 Degrees Designs</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index_.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="customForms_.html">Custom Order</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <h1>Custom Order Form</h1>
+        <hr>
+
+        <form action="https://formsubmit.co/19a3db7f8f6970d7cb01a432f2745b52" method="POST">
+
+            <fieldset>
+                <div class="item">
+                    <label for="odate">Today's Date <span>*</span></label>
+                    <input id="tdate" type="date" name="tdate" />
+                    <i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="rdate">Requested Date <span>*</span></label>
+                    <input id="rdate" type="date" name="rdate" />
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+            </fieldset>
+            <br>
+            <div class="design">
+                <h3>Contact Information</h3>
+                <label id="icon" for="name"><i class="fas fa-user"></i></label>
+                <input type="text" name="name" id="name" placeholder="Full Name" required /><br><br>
+
+                <label for="icon" for="address"><i class="fas fa-map"></i></label>
+                <input type="text" name="Street" id="Street" placeholder="Street Address">
+                <input type="text" name="Street" id="Street" placeholder="Optional"><br>
+
+                <input type="text" name="City" id="City" placeholder="City">
+                <input type="text" name="State" id="State" placeholder="State">
+                <input type="text" name="ZipCode" id="zipCode" placeholder="Zip Code"><br><br>
+
+                <label for="icon" for="phone"><i class="fas fa-phone"></i></label>
+                <input type="text" name="phone" id="phone" placeholder="Phone" required><br>
+
+                <label for="icon" for="email"><i class="fas fa-envelope"></i></label>
+                <input type="text" name="email" id="email" placeholder="Email">
+            </div>
+            <br>
+            <div class="design">
+                <h3>Delivery Option</h3>
+                <h5>How would you like to receive your new tumbler? * <em>Additional fees may apply.</em></h5>
+
+                <input type="radio" id="shipping" name="dOptionOne" value="Shipping">
+                 <label for="shipping">USPS Shipping</label>&nbsp;&nbsp;
+
+                <input type="radio" id="pickup" name="dOptionTwo" value="Pickup" />
+                <label for="pickup">Coordinated Pickup</label>
+            </div>
+            <br>
+            <fieldset>
+                <div class="design">
+                    <h3>Cup Style</h3>
+                    <input type="checkbox" id="option1" name="option1" value="sippyCup">
+                    <label for="option1"> 8oz Sippy Cup</label><br>
+                    <input type="checkbox" id="option2" name="option2" value="lowBall">
+                    <label for="option2"> 10oz Lowball</label><br>
+                    <input type="checkbox" id="option3" name="option3" value="modernCurve">
+                    <label for="option3"> Modern Curve: </label>
+                    <input type="radio" name="size12" id="size12">&nbsp;12oz
+                    <input type="radio" name="size20" id="size20">&nbsp;20oz
+                    <input type="radio" name="size30" id="size30">&nbsp;30oz
+                    <br>
+                    <input type="checkbox" id="option4" name="option4" value="wine">
+                    <label for="option4"> 12oz Wine</label><br>
+                    <input type="checkbox" id="option5" name="option5" value="Coffee">
+                    <label for="option5"> 12oz Coffee</label><br>
+                    <input type="checkbox" id="option6" name="option6" value="Skinny">
+                    <label for="option6"> Skinny</label>
+                    <input type="radio" name="size20" id="size20">&nbsp;20oz
+                    <input type="radio" name="size30" id="size30">&nbsp;30oz
+                    <br>
+                    <input type="checkbox" id="option7" name="option7" value="barrel">
+                    <label for="option7"> 25oz Barrel</label><br>
+                    <input type="checkbox" id="option8" name="option8" value="other">
+                    <label for="option8"> Other</label><br>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <div class="design">
+                    <h3>Design Style</h3>
+                    <label for="design1"></label>
+                    <input type="radio" name="glitter" id="glitter"> Glitter&nbsp;
+                    <input type="radio" name="nonGlitter" id="nonGlitter"> NON-Glitter&nbsp;
+                    <br><br>
+                    <label for="bgColor">Background Color: </label>
+                    <input type="text" name="bgColor" id="bgColor"><br>
+                    <label for="txtColor">Text Color: </label>
+                    <input type="text" name="txtColor" id="txtColor"><br>
+                    <label for="txtFont">Text Font: </label>
+                    <input type="text" name="txtFont" id="txtFont"><br>
+                    <label for="pMsg">Personalized Text: </label>
+                    <input type="text" name="pTxt" id="pTxt"><br>
+
+                    <div class="addInfo">
+                        <h3>Additional Information: </h3>
+                        <textarea></textarea>
+                        <hr>
+                        <button type="submit" class="btn btn-primary">Send Email</button>
+                    </div>
+                </div>
+            </fieldset>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
